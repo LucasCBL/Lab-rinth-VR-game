@@ -18,8 +18,8 @@ public class pressure_plate : MonoBehaviour
     // en caso de colisión ativamos la animación de presionada y llamamos a la función de la puerta
     private void OnCollisionEnter(Collision other) {
         print("enter");
-        pickable_item item = other.gameObject.GetComponent<pickable_item>();
-        if(item) {
+        player_projectile item = other.gameObject.GetComponent<player_projectile>();
+        if(!item) {
             if(objects == 0) {
                 anim.SetTrigger(pressed);
                 door.add_plate();
@@ -31,10 +31,13 @@ public class pressure_plate : MonoBehaviour
     // si se deja de presionar la puerta avisamos a la puerta
     private void OnCollisionExit(Collision other) {
         print("exit");
-        objects--;
-        if(objects == 0) {
-            anim.ResetTrigger(pressed);
-            door.subtract_plate();
+        player_projectile item = other.gameObject.GetComponent<player_projectile>();
+        if(!item) {
+            objects--;
+            if(objects == 0) {
+                anim.ResetTrigger(pressed);
+                door.subtract_plate();
+            }
         }
     }
     // Update is called once per frame
