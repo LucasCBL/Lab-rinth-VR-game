@@ -15,7 +15,7 @@ Las cosas importantes para tener en cuenta son las siguientes:
 > ### Mecánicas del juego
 
 * El jugador podrá moverse en el mundo con libertad, tanto en horizontal como en vertical ya que hay una mecánica de salto.
-  ![]()
+  ![salto](RECURSOS%20README/salto-movimiento.gif)
 * El jugador podrá vez de que color tiene su "luz"
   ![luz](RECURSOS%20README/activar-luz-mano.gif)
 * El jugador interactuar y algunos objetos que se encuentre, entre ellos cubos y colores
