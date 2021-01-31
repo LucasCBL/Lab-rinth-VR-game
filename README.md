@@ -51,7 +51,7 @@ Hicimos que la cámara esté fijada al usuario y sea este el que la controle tod
 
 Hablando de sensores, implementamos una brújula que le servirá al jugador para orientarse en las diferentes salas.
 
-[![Watch the video](RECURSOS%20README/brujula.jpg)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](RECURSOS%20README/brujula.jpg)](https://www.youtube.com/watch?v=TK6jzOQp8w4&feature=youtu.be&ab_channel=LUCASCHRISTIANBODSONLOBATO)
 
 (Pulsar en la imagen para acceder al vídeo)
 > ### Gif animados de ejecución
