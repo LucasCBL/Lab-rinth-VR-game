@@ -31,10 +31,13 @@ public class pressure_plate : MonoBehaviour
     // si se deja de presionar la puerta avisamos a la puerta
     private void OnCollisionExit(Collision other) {
         print("exit");
-        objects--;
-        if(objects == 0) {
-            anim.ResetTrigger(pressed);
-            door.subtract_plate();
+        player_projectile item = other.gameObject.GetComponent<player_projectile>();
+        if(!item) {
+            objects--;
+            if(objects == 0) {
+                anim.ResetTrigger(pressed);
+                door.subtract_plate();
+            }
         }
     }
     // Update is called once per frame
