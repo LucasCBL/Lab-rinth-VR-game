@@ -35,10 +35,16 @@ Las cosas importantes para tener en cuenta son las siguientes:
 
 
 > ### Aspectos que destacarías en la aplicación. Especificar si se han incluido sensores de los que se han trabajado en interfaces multimodales.
+
 Podemos descatar que juntando todas las mecánicas que hemos hecho podríamos expandir el juego bastante y hacer puzles mucho más complejos.
 Otra cosa que hay que destacar es que hicimos pequeñas animaciones para los ataques, tanto del jugador como del enemigo.
+
 ![ataque_enemigo](RECURSOS%20README/esqueleto-puerta-enemigos.gif)
+
+
 En el gif de arriba también podemos ver otro de las cosas que hicimos y es que hayan diferente tipos de "puertas" que bloquean el camino hasta que hagas algo en específico.
+
+
 * Para abrir las puertas rojas tienes que matar a los enemigos de la sala para que desaparezca
 * Las puertas verdes es necesario darle a una diana con magia para abrirlas
 * Las puertas azules es necesario resolver un puzle para que se abran
@@ -48,6 +54,8 @@ Para evitar el mareo intentamos en lo mayor de lo posible los movimientos brusco
 Otra forma que usamos para evitar el mareo son las transiciones entre escena y escena. Estas se harán a través de un fundido a negro y luego de negro a la nueva escena.
 
 Hicimos que la cámara esté fijada al usuario y sea este el que la controle todo el tiempo para evitar posibles mareos debido a un movimiento de la cámara.
+
+Para evitar tener una interfaz de vida poco natural decidimos poner la vida del jugador en su mano.
 
 Hablando de sensores, implementamos una brújula que le servirá al jugador para orientarse en las diferentes salas.
 
@@ -75,5 +83,6 @@ Aquí tenemos un vídeo entero del juego ejecutado en un móvil
   - Diseño de mecánicas
   - Diseño de tutoriales
   - Animador
+  - Assets originales
 - Común
   - Programación
